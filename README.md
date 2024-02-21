@@ -29,6 +29,24 @@ ls-init ~/local-scope-data --openai_key=XXX --mistral_key=YYY # optional api key
 ls-serve 
 ```
 
+### Quick Start - Windows
+To get started, install the [latent-scope module](https://pypi.org/project/latentscope/) and run the server via the Command Line:
+You will also need Microsoft Visual C++ 14.0 or greater.
+
+1. install Python (versions >=3.8 or <3.12) from https://www.python.org/downloads/
+2. You will also need Microsoft Visual C++ 14.0 or greater.
+3. in a command line window run:
+```bash python -m venv virtualenv```
+4. in the same command line window run the activate.bat that is inside the newly created virtualenv/Scripts dir
+```bash C:\Users\UserExample\AppData\Local\Programs\Python\Python311\venv\Scripts\activate.bat```
+5. you will now be inside the created virtual environment
+```bash pip install latentscope```
+6. (check if pip install had errors) or
+```bash ls-init ~/local-scope-data --openai_key=XXX --mistral_key=YYY # optional api keys to enable API models 
+ls-serve 
+```
+
+
 Then open your browser to http://localhost:5001 and start processing your first dataset!  
 <img src="https://github.com/enjalot/latent-scope/blob/main/documentation/home.png?raw=true" width="320px"  alt="Ingest">  <img src="https://github.com/enjalot/latent-scope/blob/main/documentation/0-ingest.png?raw=true" width="320px"  alt="Ingest">
 
